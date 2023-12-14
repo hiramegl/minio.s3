@@ -2,7 +2,7 @@
 % Please edit documentation in R/put_obj.R
 \name{put_obj}
 \alias{put_obj}
-\title{Put object}
+\title{Put Object}
 \usage{
 put_obj(object, bucket, file, meta)
 }
@@ -14,6 +14,9 @@ put_obj(object, bucket, file, meta)
 \item{file}{A character string containing the filename (or full path) of the file you want to upload to S3. Alternatively, an raw vector containing the file can be passed directly, in which case \code{object} needs to be specified explicitly.}
 
 \item{meta}{A dictionary of metadata pairs}
+}
+\value{
+If successful, \code{TRUE}
 }
 \description{
 Puts an Object into an S3 storage
