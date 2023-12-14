@@ -1,4 +1,4 @@
-# MinIO S3 Client Package
+# MinIO S3 Client Package - SCB
 
 This is a modified version of cloudyr aws.s3 package with support to MinIO S3 storage database. All credits goes to them. This can also be used to access AWS S3 storage. If you see aws.s3 reference, don't be surprised. Its a forked project. 
 
