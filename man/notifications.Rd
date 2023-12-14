@@ -12,11 +12,11 @@ put_notification(bucket, request_body, use_https = FALSE, ...)
 \arguments{
 \item{bucket}{Character string with the name of the bucket, or an object of class \dQuote{s3_bucket}.}
 
+\item{use_https}{True if connection is HTTPS and False if connection is HTTP}
+
 \item{\dots}{Additional arguments passed to \code{\link{s3HTTP}}.}
 
 \item{request_body}{A character string containing an XML request body, as defined in the specification in the \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTnotification.html}{API Documentation}.}
-
-\item{use_https}{True if connection is HTTPS and False if connection is HTTP}
 }
 \value{
 A list containing the notification configuration, if one has been set.

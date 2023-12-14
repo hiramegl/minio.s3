@@ -17,13 +17,11 @@ delete_bucket_policy(bucket, use_https = FALSE, ...)
 
 \item{parse_response}{A logical indicating whether to return the response as is, or parse and return as a list. Default is \code{FALSE}.}
 
-
-\item{policy}{A character string containing a bucket policy.}
-
-
 \item{use_https}{True if connection is HTTPS and False if connection is HTTP}
 
 \item{\dots}{Additional arguments passed to \code{\link{s3HTTP}}.}
+
+\item{policy}{A character string containing a bucket policy.}
 }
 \value{
 For \code{get_policy}: A character string containing the JSON representation of the policy, if one has been set. For \code{delete_policy} and \code{put_policy}: \code{TRUE} if successful, \code{FALSE} otherwise.

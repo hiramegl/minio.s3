@@ -28,4 +28,4 @@ Imports:
 Suggests:
     testthat,
     datasets
-RoxygenNote: 6.1.1
+RoxygenNote: 7.2.3

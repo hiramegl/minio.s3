@@ -8,8 +8,18 @@
 \usage{
 get_object(object, bucket, use_https, ...)
 
-save_object(object, bucket, file = basename(object), overwrite = TRUE,
-  use_https, ...)
+save_object(
+  object,
+  bucket,
+  file = basename(object),
+  overwrite = TRUE,
+  use_https,
+  base_url,
+  region,
+  key,
+  secret,
+  ...
+)
 
 head_object(object, bucket, use_https, ...)
 }
@@ -18,13 +28,15 @@ head_object(object, bucket, use_https, ...)
 
 \item{bucket}{Character string with the name of the bucket, or an object of class \dQuote{s3_bucket}.}
 
+\item{use_https}{True if connection is HTTPS and False if connection is HTTP}
+
 \item{\dots}{Additional arguments passed to \code{\link{s3HTTP}}.}
 
 \item{file}{An R connection, or file name specifying the local file to save the object into.}
 
 \item{overwrite}{A logical indicating whether to overwrite \code{file}. Passed to \code{\link[httr]{write_disk}}. Default is \code{TRUE}.}
 
-\item{use_https}{True if connection is HTTPS and False if connection is HTTP}
+\item{parse_response}{Passed through to \code{\link{s3HTTP}}, as this function requires a non-default setting. There is probably no reason to ever change this.}
 }
 \value{
 If \code{file = NULL}, a raw object. Otherwise, a character string containing the file name that the object is saved to.

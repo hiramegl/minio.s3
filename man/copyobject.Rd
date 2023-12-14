@@ -5,8 +5,15 @@
 \alias{copy_bucket}
 \title{Copy Objects}
 \usage{
-copy_object(from_object, to_object = from_object, from_bucket, to_bucket,
-  headers = list(), use_https, ...)
+copy_object(
+  from_object,
+  to_object = from_object,
+  from_bucket,
+  to_bucket,
+  headers = list(),
+  use_https,
+  ...
+)
 
 copy_bucket(from_bucket, to_bucket, ...)
 }

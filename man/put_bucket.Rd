@@ -4,10 +4,14 @@
 \alias{put_bucket}
 \title{Create bucket}
 \usage{
-put_bucket(bucket, acl = c("private", "public-read", "public-read-write",
-  "aws-exec-read", "authenticated-read", "bucket-owner-read",
-  "bucket-owner-full-control"), headers = list(), use_https = FALSE,
-  ...)
+put_bucket(
+  bucket,
+  acl = c("private", "public-read", "public-read-write", "aws-exec-read",
+    "authenticated-read", "bucket-owner-read", "bucket-owner-full-control"),
+  headers = list(),
+  use_https = FALSE,
+  ...
+)
 }
 \arguments{
 \item{bucket}{Character string with the name of the bucket, or an object of class \dQuote{s3_bucket}.}
