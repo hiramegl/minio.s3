@@ -3,3 +3,4 @@
 .Rhistory
 .RData
 aws.s3.Rproj
+.ipynb_checkpoints/
