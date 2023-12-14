@@ -3,7 +3,7 @@
 #' @description Get metadata from an s3 object
 #' @param path Path of the object in the s3 storage.
 #' @template bucket
-#' @details Get tags from an s3 object
+#' @details Get metadata from an s3 object
 #' @return A dictionary of metadata pairs
 get_meta <- function(path, bucket) {
     headers <- head_object(path, bucket, use_http = F)

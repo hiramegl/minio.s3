@@ -18,5 +18,5 @@ A dictionary of metadata pairs
 Get metadata from an s3 object
 }
 \details{
-Get tags from an s3 object
+Get metadata from an s3 object
 }
