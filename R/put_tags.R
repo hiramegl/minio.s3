@@ -1,4 +1,3 @@
-# function to put object tags
 #' @rdname put_tags
 #' @title Put Tags
 #' @description Puts tags in an s3 object
